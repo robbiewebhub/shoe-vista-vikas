@@ -170,7 +170,7 @@ export const filterProducts = async (req, res) => {
         if (category) {
             if (category === "Unisex") {
                 filter.category = "adult";
-            } if (category === "Kids") {
+            } else if (category === "Kids") {
                 filter.category = "child"
             } else {
                 filter.category = category.toLowerCase();
